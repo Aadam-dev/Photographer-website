@@ -204,7 +204,7 @@ a {
   height: 100%;
   width: 347px;
   background-color: var(--secondary-color);
-  animation: progress 15s 0.1s;
+  animation: progress 14s 0.1s;
 }
 
 @keyframes progress {
@@ -222,7 +222,7 @@ a {
   height: 100%;
   width: 342px;
   background-color: var(--tertiary-color);
-  animation: progress2 15s 0.3s;
+  animation: progress2 14s 0.3s;
 }
 
 @keyframes progress2 {
@@ -240,7 +240,7 @@ a {
   height: 100%;
   width: 345px;
   background-color: #333;
-  animation: progress3 15s 0.5s;
+  animation: progress3 14s 0.5s;
 }
 
 @keyframes progress3 {

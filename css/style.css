@@ -675,8 +675,16 @@ a {
   transition: background-color 0.3s ease-in;
 }
 
-#contact .s1,
-#contact .s2,
+#contact .s1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact .s1 div {
+  margin-bottom: 3rem;
+}
+
 #contact .s3,
 #contact .s5 {
   display: flex;

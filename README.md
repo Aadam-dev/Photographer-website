@@ -1,2 +1,3 @@
 # Photographer Website
-A UI for a Photographer portfolio 
+A website template for a Photographer.
+Live site here: https://johnmedia.netlify.app

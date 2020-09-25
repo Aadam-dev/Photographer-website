@@ -745,8 +745,7 @@ a {
   margin-top: 1.5rem;
   color: #fff;
   outline: none;
-/*   border: none; */
-  border-bottom: 2px solid #333;
+  border:  2px solid #333;
 }
 
 #contact .s6 {

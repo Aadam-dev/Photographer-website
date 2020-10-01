@@ -16,6 +16,23 @@ body {
   line-height: 1.4;
   color: #fff;
   overflow-x: hidden;
+  transition: transform 0.4s ease;
+}
+
+body.show-nav {
+  transform: translateX(150px);
+}
+
+body.show-nav .btn-lines:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+
+body.show-nav .btn-lines:nth-child(2) {
+  opacity: 0;
+}
+
+body.show-nav .btn-lines:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
 }
 
 a {
@@ -70,17 +87,83 @@ a {
   padding: 3rem 0;
 }
 
-#about hr,
-#portfolio hr,
-#services hr,
-#testimonial hr {
-  border: var(--dark-primary-color) dotted 6px;
-  border-bottom: 0;
-  width: 25%;
-  margin-top: 1rem;
+/* nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 2px solid var(--primary-color);
+  z-index: 100;
+  width: 150px;
+  height: 100vh;
+  background-color: var(--dark-primary-color);
+  color: #fff;
+  transform: translateX(-100%);
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  text-align: center;
+}
+
+nav ul li:first-child {
+  border-top: 2px solid var(--primary-color);
+}
+
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+nav ul li a.current {
+  text-decoration: underline;
+  text-decoration-color: #ffbd39;
+}
+
+nav ul li a:hover {
+  color: #ffbd39;
+}
+
+nav .logo {
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00005c;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.btn-lines {
+  width: 30px;
+  height: 2.5px;
+  background: #fff;
+  margin: 0.5rem 0;
+}
 /* showcase */
+
 #showcase {
   background-color: var(--primary-color);
   height: 100vh;
@@ -89,6 +172,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: re;
 }
 
 #showcase i {
@@ -115,21 +199,6 @@ a {
   }
 }
 
-#showcase .btn-up {
-  position: fixed;
-  right: 25px;
-  bottom: 3px;
-  padding: 0.6rem;
-  background-color: var(--dark-primary-color);
-  opacity: 0.6;
-  border-radius: 15px;
-  z-index: 3;
-}
-
-#showcase .btn-up:active {
-  opacity: 1;
-}
-
 #showcase img {
   width: 100px;
   border-radius: 50%;
@@ -139,25 +208,7 @@ a {
 /* about */
 #about {
   background-color: var(--primary-color);
-  position: relative;
-}
-
-#about hr {
-  position: absolute;
-  bottom: 0;
-  left: 38%;
-  margin-top: 2rem;
-}
-
-#about .items {
-  display: flex;
-  margin-bottom: 0.5rem;
-}
-
-#about .items img {
-  width: 100px;
-  margin-right: 1rem;
-  border-radius: 45%;
+  height: 100vh;
 }
 
 #about .items .about-info {
@@ -165,6 +216,7 @@ a {
   background-color: var(--dark-primary-color);
   padding: 0.75rem;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 #about .items .about-info .item > p {
@@ -204,7 +256,7 @@ a {
   height: 100%;
   width: 347px;
   background-color: var(--secondary-color);
-  animation: progress 14s 0.1s;
+  animation: progress 5s 0.1s;
 }
 
 @keyframes progress {
@@ -222,7 +274,7 @@ a {
   height: 100%;
   width: 342px;
   background-color: var(--tertiary-color);
-  animation: progress2 14s 0.3s;
+  animation: progress2 5s 0.3s;
 }
 
 @keyframes progress2 {
@@ -240,7 +292,7 @@ a {
   height: 100%;
   width: 345px;
   background-color: #333;
-  animation: progress3 14s 0.5s;
+  animation: progress3 5s 0.5s;
 }
 
 @keyframes progress3 {
@@ -274,42 +326,6 @@ a {
   justify-content: space-between;
 }
 
-#about .flex .line {
-  width: 1px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 75px;
-  left: 10px;
-}
-
-#about .flex .line2 {
-  width: 1px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 165px;
-  left: 10px;
-}
-
-#about .flex2 .line {
-  width: 0.7px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 75px;
-  left: 615px;
-}
-
-#about .flex2 .line2 {
-  width: 0.7px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 165px;
-  left: 615px;
-}
-
 #about .edu .flex td {
   position: absolute;
   left: 315px;
@@ -325,24 +341,10 @@ a {
   justify-content: center;
 }
 
-#about .red {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  visibility: hidden;
-}
-
 /* services */
 #services {
   background-color: var(--primary-color);
-  position: relative;
-}
-
-#services hr {
-  position: absolute;
-  bottom: 0;
-  left: 38%;
-  margin-top: 0.75rem;
+  height: 100vh;
 }
 
 .img-size {
@@ -385,22 +387,15 @@ a {
 /* portfolio */
 #portfolio {
   background-color: var(--primary-color);
-  position: relative;
-}
-
-#portfolio hr {
-  position: absolute;
-  bottom: 0;
-  left: 38%;
-  margin-top: 4rem;
+  height: 100vh;
 }
 
 #portfolio ul {
   display: flex;
   position: absolute;
-  top: 7%;
-  right: 17%;
-  margin-top: 1.5rem;
+  top: 10%;
+  right: 13%;
+  margin-top: 1rem;
 }
 
 #portfolio ul li {
@@ -420,61 +415,65 @@ a {
   margin-top: 2rem;
 }
 
-#portfolio .flex,
-#portfolio .flex2 {
+#portfolio .flex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #portfolio .flex .p1 {
-  width: 350px;
-  height: 230px;
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img4.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  transition: transfrom 0.4s ease;
 }
 
 #portfolio .flex .p2 {
-  width: 350px;
-  height: 230px;
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img5.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  transition: transfrom 0.4s ease-in;
 }
 
 #portfolio .flex .p3 {
-  width: 350px;
-  height: 230px;
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img6.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  transition: transfrom 0.4s ease-in;
 }
 
 #portfolio .flex .p1::after,
 #portfolio .flex .p2::after,
 #portfolio .flex .p3::after,
-#portfolio .flex2 .p4::after,
-#portfolio .flex2 .p5::after,
-#portfolio .flex2 .p6::after {
+#portfolio .flex .p4::after,
+#portfolio .flex .p5::after,
+#portfolio .flex .p6::after {
   content: "";
   background-color: var(--primary-color);
   opacity: 0.5;
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: transfrom 0.4s ease-in;
 }
 
 #portfolio .flex > div > span,
-#portfolio .flex2 > div > span {
+#portfolio .flex > div > span {
   background-color: var(--dark-primary-color);
   padding: 0.5rem 1rem;
   border-bottom-right-radius: 10px;
@@ -487,9 +486,9 @@ a {
 #portfolio .flex .p1 i,
 #portfolio .flex .p2 i,
 #portfolio .flex .p3 i,
-#portfolio .flex2 .p4 i,
-#portfolio .flex2 .p5 i,
-#portfolio .flex2 .p6 i {
+#portfolio .flex .p4 i,
+#portfolio .flex .p5 i,
+#portfolio .flex .p6 i {
   background-color: var(--secondary-color);
   border-radius: 50%;
   padding: 0.75rem;
@@ -498,60 +497,49 @@ a {
   left: 45%;
 }
 
-#portfolio .flex2 .p4 {
-  width: 350px;
-  height: 230px;
+#portfolio .flex .p4 {
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img2.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0;
+  transition: transfrom 0.4s ease-in;
 }
 
-#portfolio .flex2 .p5 {
-  width: 350px;
-  height: 230px;
+#portfolio .flex .p5 {
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img1.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0;
+  transition: transfrom 0.4s ease-in;
 }
 
-#portfolio .flex2 .p6 {
-  width: 350px;
-  height: 230px;
+#portfolio .flex .p6 {
+  width: 380px;
+  height: 270px;
   position: relative;
   background: url(../img/img3.jpg) no-repeat center center/cover;
   border-radius: 5px;
   border: 0.5px solid #f4f4f4;
   margin-right: 0.5rem;
   margin-bottom: 0;
+  transition: transfrom 0.4s ease-in;
 }
 #portfolio .flex .p1:hover,
 #portfolio .flex .p2:hover,
 #portfolio .flex .p3:hover,
-#portfolio .flex2 .p4:hover,
-#portfolio .flex2 .p5:hover,
-#portfolio .flex2 .p6:hover {
-  animation: swell 0.5s ease-in-out;
+#portfolio .flex .p4:hover,
+#portfolio .flex .p5:hover,
+#portfolio .flex .p6:hover {
+  transform: scale(1.03);
   cursor: pointer;
-}
-
-@keyframes swell {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.03);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 #portfolio .flex3 {
@@ -566,13 +554,7 @@ a {
 /* testimonial */
 #testimonial {
   background-color: var(--primary-color);
-  position: relative;
-}
-
-#testimonial hr {
-  position: absolute;
-  bottom: 0;
-  left: 38%;
+  height: 100vh;
 }
 
 .user-img img {
@@ -648,6 +630,7 @@ a {
 /* contact */
 #contact {
   background-color: var(--primary-color);
+  height: 100vh;
 }
 
 #contact .toggler-1,
@@ -682,7 +665,7 @@ a {
 }
 
 #contact .s1 div {
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
 }
 
 #contact .s3,
@@ -745,7 +728,7 @@ a {
   margin-top: 1.5rem;
   color: #fff;
   outline: none;
-  border: none;
+  border: 2px solid #333;
   border-bottom: 2px solid #333;
 }
 

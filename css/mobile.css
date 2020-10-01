@@ -1,431 +1,902 @@
+@media (min-width: 1367px) {
+  #about h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #contact .s1 div {
+    margin-bottom: 2.5rem;
+  }
+
+  #portfolio ul {
+    top: 12%;
+    right: 12%;
+  }
+}
+
 @media (max-width: 1366px) {
-#about h1 {
-  padding-bottom: 0.6rem;
-  padding-top: 1rem;
-}
+  #about h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 
-#portfolio .flex .p1,
-#portfolio .flex .p2,
-#portfolio .flex .p3,
-#portfolio .flex2 .p4,
-#portfolio .flex2 .p5,
-#portfolio .flex2 .p6 {
-  width: 320px;
-  height: 240px;
-}
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 320px;
+    height: 240px;
+  }
 
-#portfolio ul {
-  top: 7%;
-  right: 15%;
-}
+  #portfolio ul {
+    top: 10%;
+    right: 12%;
+  }
 
-#testimonial .user {
-  display: flex;
-}
+  #testimonial .user {
+    display: flex;
+  }
 
+  #contact .s1 div {
+    margin-bottom: 2rem;
+  }
+
+  #contact .label {
+    padding: 1rem 1.2rem;
+  }
 }
 
 @media (max-width: 1024px) {
-#portfolio ul {
-  top: 7%;
-  right: 2%;
+  #about .edu .flex2 td {
+    left: 800px;
+  }
+
+  #about h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #portfolio ul {
+    top: 12%;
+    right: 5%;
+  }
+
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 300px;
+    height: 220px;
+  }
+
+  #testimonial .user {
+    display: flex;
+  }
 }
 
-#about .flex2 .line {
-  top: 75px;
-  left: 545px;
+@media (max-width: 900px) {
+  #about .edu .flex2 {
+    display: none;
+  }
+
+  #about h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  #about .items .about-info .item > p {
+    font-size: 0.9rem;
+  }
+
+  #about .items .about-info .item .btn {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  #about .items .about-info {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  #about .items .about-info .m-bottom {
+    margin-bottom: 1rem;
+  }
+  #about .flex3 .btn2 {
+    margin-top: 0.3rem;
+  }
 }
 
-#about .flex2 .line2 {
-  top: 165px;
-  left: 545px;
+@media (max-width: 983px) {
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 270px;
+    height: 220px;
+  }
 }
 
-#testimonial .user {
-  display: flex;
-}
-}
-
-#contact .s6 {
-  display: none;
+@media (max-width: 850px) {
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 250px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
-/* about */
-#about .items img {
-  display: none;
+  /* about */
+  #about .items .about-info {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  #about .items .about-info .item {
+    font-size: 0.75rem;
+  }
+
+  #about .items .about-info .item p {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .progress {
+    width: 300px;
+  }
+
+  .progressbar {
+    width: 297px;
+  }
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 297px;
+    }
+  }
+
+  .progressbar2 {
+    width: 290px;
+  }
+
+  @keyframes progress2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 290px;
+    }
+  }
+
+  .progressbar3 {
+    width: 295px;
+  }
+
+  @keyframes progress3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 295px;
+    }
+  }
+
+  #about .edu .flex2 {
+    display: none;
+  }
+
+  #about .edu .flex2 td {
+    position: absolute;
+    left: 315px;
+  }
+
+  .progress4 {
+    margin-bottom: 0.1rem;
+  }
+
+  #about .items .about-info .btn {
+    padding: 0.5rem 3rem;
+    margin-bottom: 1rem;
+  }
+
+  /* services */
+  .img-size {
+    width: 150px;
+    height: 100px;
+  }
+
+  #services .items > .img-bg {
+    height: 150px;
+  }
+
+  /* portfolio */
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* testimonial */
+  #testimonial .user {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #testimonial i {
+    margin: 1rem 1rem;
+  }
+
+  /* contact */
+  #contact p {
+    padding: 0.4rem;
+  }
+
+  #contact .s3,
+  #contact .s5 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #contact .label {
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+  }
+
+  @media (max-width: 635px) {
+    #portfolio .flex .p1,
+    #portfolio .flex .p2,
+    #portfolio .flex .p3,
+    #portfolio .flex .p4,
+    #portfolio .flex .p5,
+    #portfolio .flex .p6 {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 635px) {
+    #portfolio .flex .p1,
+    #portfolio .flex .p2,
+    #portfolio .flex .p3,
+    #portfolio .flex .p4,
+    #portfolio .flex .p5,
+    #portfolio .flex .p6 {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    /* about */
+    #about .items .about-info {
+      flex-direction: column;
+    }
+
+    .progress {
+      width: 470px;
+    }
+
+    .progressbar {
+      width: 467px;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 467px;
+      }
+    }
+
+    .progressbar2 {
+      width: 460px;
+    }
+
+    @keyframes progress2 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 460px;
+      }
+    }
+
+    .progressbar3 {
+      width: 465px;
+    }
+
+    @keyframes progress3 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 465px;
+      }
+    }
+
+    #about .edu .flex2 {
+      display: none;
+    }
+
+    .progress4 {
+      width: 380px;
+    }
+
+    /* services */
+    #services .items > .img-bg {
+      display: none;
+    }
+
+    #services .items {
+      margin-left: 1rem;
+    }
+
+    #portfolio .flex > div > span,
+    #portfolio .flex2 > div > span {
+      padding: 0.3rem 0.7rem;
+      font-size: 0.75rem;
+    }
+
+    #portfolio .flex .p1 i,
+    #portfolio .flex .p2 i,
+    #portfolio .flex .p3 i,
+    #portfolio .flex2 .p4 i,
+    #portfolio .flex2 .p5 i,
+    #portfolio .flex2 .p6 i {
+      padding: 0.5rem;
+      top: 35%;
+      left: 35%;
+    }
+
+    /* testimonial */
+    #testimonial .user-card {
+      width: 300px;
+      height: 150px;
+      font-size: 0.55rem;
+    }
+
+    #testimonial i {
+      margin: 1rem 0.6rem;
+    }
+
+    #testimonial .first i:last-child,
+    #testimonial .second i:last-child {
+      display: none;
+    }
+
+    /* contact */
+    #contact textarea {
+      width: 25rem;
+      height: 12rem;
+    }
+
+    #contact .label {
+      padding: 0.75rem 1rem;
+      margin: 0.75rem;
+    }
+
+    #contact .s1 div {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  @media (max-width: 569px) {
+    .progress {
+      width: 430px;
+    }
+
+    .progressbar {
+      width: 428px;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 428px;
+      }
+    }
+
+    .progressbar2 {
+      width: 420px;
+    }
+
+    @keyframes progress2 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 420px;
+      }
+    }
+
+    .progressbar3 {
+      width: 425px;
+    }
+
+    @keyframes progress3 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 425px;
+      }
+    }
+  }
+
+  @media (max-width: 532px) {
+    .progress {
+      width: 410px;
+    }
+
+    .progressbar {
+      width: 408px;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 408px;
+      }
+    }
+
+    .progressbar2 {
+      width: 400px;
+    }
+
+    @keyframes progress2 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 400px;
+      }
+    }
+
+    .progressbar3 {
+      width: 405px;
+    }
+
+    @keyframes progress3 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 405px;
+      }
+    }
+  }
+
+  @media (max-width: 503px) {
+    .progress {
+      width: 370px;
+    }
+
+    .progressbar {
+      width: 368px;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 368px;
+      }
+    }
+
+    .progressbar2 {
+      width: 360px;
+    }
+
+    @keyframes progress2 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 360px;
+      }
+    }
+
+    .progressbar3 {
+      width: 365px;
+    }
+
+    @keyframes progress3 {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 365px;
+      }
+    }
+
+    #about h1 {
+      padding-top: 1.2rem;
+    }
+
+    #about .flex3 .btn2 {
+      margin-top: 0.1rem;
+    }
+  }
+
+  #about .items .about-info .m-bottom {
+    margin-bottom: 0.75rem;
+  }
+
+  #portfolio ul {
+    top: 12%;
+    right: 17%;
+    text-align: center;
+  }
 }
 
-#about .items .about-info {
-  padding: 0.5rem;
-  font-size: 0.75rem;
+@media (max-width: 460px) {
+  .progress {
+    width: 325px;
+  }
+
+  .progressbar {
+    width: 323px;
+  }
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 323px;
+    }
+  }
+
+  .progressbar2 {
+    width: 315px;
+  }
+
+  @keyframes progress2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 315px;
+    }
+  }
+
+  .progressbar3 {
+    width: 320px;
+  }
+
+  @keyframes progress3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 320px;
+    }
+  }
+
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 150px;
+    height: 140px;
+  }
 }
 
-#about .items .about-info .item {
-  font-size: 0.75rem;
+@media (max-width: 430px) {
+  .progress {
+    width: 300px;
+  }
+
+  .progressbar {
+    width: 298px;
+  }
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 298px;
+    }
+  }
+
+  .progressbar2 {
+    width: 290px;
+  }
+
+  @keyframes progress2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 290px;
+    }
+  }
+
+  .progressbar3 {
+    width: 295px;
+  }
+
+  @keyframes progress3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 295px;
+    }
+  }
+
+  .progress4 {
+    width: 350px;
+  }
+
+  #portfolio ul {
+    right: 15%;
+    text-align: center;
+  }
 }
 
-#about .items .about-info .item p {
-  padding-left: 1rem;
-}
+@media (max-width: 415px) {
+  /* About */
+  #about h1 {
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+  }
 
-.progress {
-width: 300px;
-}
+  #about .items .about-info .item .btn {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
 
-.progressbar {
-  width: 297px;
-}
+  #about .items .about-info .progress {
+    width: 300px;
+  }
 
-.progressbar2 {
-  width: 290px;
-}
+  #about .items .about-info .progress .progressbar {
+    width: 297px;
+  }
 
-.progressbar3 {
-  width: 295px;
-}
+  #about .items .about-info .progress .progressbar2 {
+    width: 297px;
+  }
 
-#about .edu .flex {
-  display: none;
-}
+  #about .items .about-info .progress .progressbar3 {
+    width: 295px;
+  }
 
-#about .flex2 .line {
-  width: 1px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 55.5px;
-  left: 10px;
-}
+  /* Portfolio */
+  .progress4 {
+    width: 350px;
+  }
 
-#about .flex2 .line2 {
-  width: 1px;
-  height: 50px;
-  background-color: grey;
-  position: absolute;
-  top: 155px;
-  left: 10px;
-}
+  #portfolio .flex > div > span,
+  #portfolio .flex2 > div > span {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.5rem;
+  }
 
-#about .edu .flex2 td {
-  position: absolute;
-  left: 315px;
-}
+  #portfolio ul {
+    top: 13%;
+    right: 12%;
+    text-align: center;
+  }
 
-.progress4 {
-  margin-bottom: 0.1rem;
-}
+  #testimonial .line {
+    width: 200px;
+  }
 
-#about .items .about-info .btn {
-  padding: 0.5rem 3rem;
-  margin-bottom: 1rem;
-}
+  #contact textarea {
+    width: 25rem;
+    height: 10rem;
+  }
 
-/* services */
-.img-size {
-  width: 150px;
-  height: 100px;
-}
+  #contact .label {
+    padding: 0.5rem 1rem;
+    margin: 1.75rem;
+  }
 
-#services .items > .img-bg {
-  height: 150px;
-}
-
-/* portfolio */
-#portfolio .flex .p1,
-#portfolio .flex .p2,
-#portfolio .flex .p3,
-#portfolio .flex2 .p4,
-#portfolio .flex2 .p5,
-#portfolio .flex2 .p6 {
-  width: 230px;
-  height: 200px;
-}
-
-#portfolio ul {
-  top: 7%;
-  right: 3%;
-}
-
-/* testimonial */
-#testimonial .user {
-  display: flex;
-  justify-content: space-around;
-}
-
-#testimonial i {
-  margin: 1rem 1rem;
-}
-
-/* contact */
-#contact p {
-  padding: 0.4rem;
-}
-
-#contact .s3,
-#contact .s5 {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-
-@media (max-width: 600px) {
-/* about */
-#about .items .about-info {
-  flex-direction: column;
-}
-
-.progress {
-width: 400px;
-}
-
-.progressbar {
-  width: 397px;
-}
-
-.progressbar2 {
-  width: 390px;
-}
-
-.progressbar3 {
-  width: 395px;
-}
-
-.progress4 {
-  width: 380px;
-}
-
-/* services */
-#services .items > .img-bg {
-  display: none;
-}
-
-#services .items {
-  margin-left: 1rem;
-}
-
-/* potfolio */
-#portfolio .flex .p1,
-#portfolio .flex .p2,
-#portfolio .flex .p3,
-#portfolio .flex2 .p4,
-#portfolio .flex2 .p5,
-#portfolio .flex2 .p6 {
-  width: 200px;
-  height: 150px;
-}
-
-#portfolio .flex {
-  margin: 2rem 0.2rem 0.05rem 0.5rem;
-}
-
-#portfolio .flex2 {
-  margin: 0 0.2rem 0.2rem 0.5rem;
-}
-
-#portfolio ul {
-  top: 10%;
-  right: 13%;
-}
-
-#portfolio .flex > div > span,
-#portfolio .flex2 > div > span {
-  padding: 0.3rem 0.7rem;
-  font-size: 0.75rem;
-}
-
-#portfolio .flex .p1 i,
-#portfolio .flex .p2 i,
-#portfolio .flex .p3 i,
-#portfolio .flex2 .p4 i,
-#portfolio .flex2 .p5 i,
-#portfolio .flex2 .p6 i {
-  padding: 0.5rem;
-  top: 35%;
-  left: 35%;
-}
-
-
-/* testimonial */
-#testimonial .user-card {
-  width: 300px;
-  height: 150px;
-  font-size: 0.55rem;
-}
-
-#testimonial i {
-  margin: 1rem 0.6rem;
-}
-
-#testimonial .first i:last-child,
-#testimonial .second i:last-child {
-  display: none;
-}
-
-/* contact */
-#contact textarea {
-  width: 25rem;
-  height: 15rem;
-}
-
-@media (max-width: 414px){
-.menu-overlay .menu > div {
-  width: 200vw;
-  height: 250vw;
-}
-
-.progress4 {
-  width: 350px;
-}
-
-#portfolio .flex .p1,
-#portfolio .flex .p2,
-#portfolio .flex .p3,
-#portfolio .flex2 .p4,
-#portfolio .flex2 .p5,
-#portfolio .flex2 .p6 {
-  width: 120px;
-  height: 100px;
-}
-
-#portfolio .flex,
-#portfolio .flex2 {
-  margin-left: 2.5rem;
-}
-
-#portfolio ul {
-  top: 12%;
-  right: 6%;
-}
-
-#portfolio .flex > div > span,
-#portfolio .flex2 > div > span {
-  padding: 0.2rem 0.5rem;
-  font-size: 0.5rem;
-}
-
-#testimonial .line {
-  width: 200px;
-}
+  #contact .s1 div {
+    margin-bottom: 0.75rem;
+  }
 }
 
 @media (max-width: 411px) {
   #contact .label {
-  padding: 1rem .5rem;
-  font-size: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  #contact .s1 div {
+    margin-bottom: 1.5rem;
+  }
 }
+
+@media (max-width: 400px) {
+  .progress4 {
+    width: 300px;
+  }
+
+  #about .edu .flex td {
+    left: 250px;
+  }
+
+  #testimonial .user .user3 {
+    display: none;
+  }
 }
 
 @media (max-width: 380px) {
-.progress,
-.progress4 {
-  width: 255px;
-}
-.progressbar {
-  width: 253px;
+  #about .items .about-info {
+    font-size: 1rem;
+  }
+
+  #about .edu {
+    font-size: 0.85rem;
+  }
+
+  .progress {
+    width: 255px !important;
+  }
+
+  .progressbar {
+    width: 242px !important;
+  }
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 253px;
+    }
+  }
+
+  .progressbar2 {
+    width: 245px !important;
+  }
+
+  @keyframes progress2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 245px;
+    }
+  }
+
+  .progressbar3 {
+    width: 250px !important;
+  }
+
+  @keyframes progress3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 250px;
+    }
+  }
+
+  #portfolio .flex,
+  #portfolio .flex2 {
+    margin-left: 1rem;
+  }
+
+  #portfolio ul li a {
+    padding: 0.5rem;
+  }
+
+  #testimonial i {
+    margin: 1rem 0.2rem;
+  }
+
+  #testimonial .line {
+    width: 250px;
+  }
+
+  #testimonial .user-card {
+    font-size: 0.5rem;
+  }
 }
 
-.progressbar2 {
-  width: 247px;
-}
-
-.progressbar3 {
-  width: 250px;
-}
-
-#about .items .about-info span {
-  font-size: 0.75rem;
-}
-
-#about .edu .flex2 td {
-  left: 250px;
-}
-
-#about .items .about-info {
-  padding: 0.5rem;
-}
-
-#portfolio ul {
-  top: 10%;
-  right: 15%;
-}
-
-#portfolio .flex,
-#portfolio .flex2 {
-  margin-left: 1rem;
-}
-
-#portfolio ul li a {
-  padding: 0.5rem;
-}
-
-#testimonial i {
-  margin: 1rem 0.2rem;
-}
-
-#testimonial .line {
-  width: 250px;
-}
-
-#testimonial .user-card {
-  font-size: 0.5rem;
-}
-}
-
-@media (max-width:331px) {
+@media (max-width: 331px) {
   #contact .label {
-  padding: 0.75rem .1rem;
-  font-size: 0.75rem;
+    padding: 0.5rem 0.1rem;
+    font-size: 0.75rem;
+  }
 }
 
-@media (max-width: 320px){
-.progress,
-.progress4 {
-  width: 250px;
-}
-.progressbar {
-  width: 247px;
-}
+@media (max-width: 320px) {
+  #about {
+    font-size: 0.75rem;
+  }
 
-.progressbar2 {
-  width: 240px;
-}
+  #about h1 {
+    padding-top: 1.5rem;
+  }
 
-.progressbar3 {
-  width: 245px;
-}
+  #about .items .about-info .skillset {
+    display: none;
+  }
 
-#about .items .about-info span {
-  font-size: 0.65rem;
-}
+  #about .items .about-info span {
+    font-size: 0.65rem;
+  }
 
-#about .items .about-info {
-  padding-left: 0;
-}
+  #about .edu .flex td {
+    left: 200px;
+  }
 
-#about .items .about-info .item *:last-child {
-  display: none;
-}
+  .progress4 {
+    width: 250px;
+  }
 
-#about .items .about-info {
-  font-size: 0.65rem;
-}
+  #about .flex3 {
+    margin-top: 0.75rem;
+  }
 
-#about .edu .flex2 td {
-  left: 200px;
-}
+  #portfolio ul {
+    top: 18%;
+    right: 8%;
+  }
 
-#about .flex3 {
-  font-size: 0.75rem;
-}
+  #testimonial .user-card {
+    font-size: 0.4rem;
+  }
 
-#testimonial .user-card {
-  font-size: 0.4rem;
-}
+  #contact .label {
+    padding: 0.5rem 0.1rem;
+    font-size: 0.75rem;
+  }
 
-#contact .label {
-  padding: 1rem .1rem;
-  font-size: 0.75rem;
-}
+  #contact .s1 div {
+    margin-bottom: 0.5rem;
+  }
 }

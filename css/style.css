@@ -107,7 +107,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 1.5rem;
+  padding: 1.3rem;
   border-bottom: 2px solid var(--primary-color);
   text-align: center;
 }
@@ -146,8 +146,8 @@ nav .logo img {
 
 .menu-btn {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   background-color: #00005c;
   width: 50px;
   height: 50px;
@@ -213,7 +213,7 @@ nav .logo img {
 
 #about .items .about-info .item > p {
   margin-bottom: 0.5rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   text-align: center;
 }
 
@@ -352,13 +352,6 @@ nav .logo img {
 
 #services .items:last-child {
   margin-bottom: 0;
-}
-
-#services .red {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  visibility: hidden;
 }
 
 #services .items p {

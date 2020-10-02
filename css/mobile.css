@@ -103,6 +103,18 @@
   }
 }
 
+@media (max-width: 983px) {
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 270px;
+    height: 220px;
+  }
+}
+
 @media (max-width: 900px) {
   #about .edu .flex2 {
     display: none;
@@ -118,7 +130,7 @@
 
   #about .items .about-info .item .btn {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 
   #about .items .about-info {
@@ -131,18 +143,6 @@
   }
   #about .flex3 .btn2 {
     margin-top: 0.3rem;
-  }
-}
-
-@media (max-width: 983px) {
-  #portfolio .flex .p1,
-  #portfolio .flex .p2,
-  #portfolio .flex .p3,
-  #portfolio .flex .p4,
-  #portfolio .flex .p5,
-  #portfolio .flex .p6 {
-    width: 270px;
-    height: 220px;
   }
 }
 
@@ -175,8 +175,8 @@
   }
 
   #about .items .about-info .item p {
-    padding-left: 1rem;
     font-size: 0.75rem;
+    text-align: center;
   }
 
   .progress {
@@ -758,7 +758,7 @@
   /* About */
   #about h1 {
     padding-top: 2rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: 1rem;
   }
 
   #about .items .about-info .item .btn {
@@ -852,6 +852,10 @@
     font-size: 2.7rem;
   }
 }
+/* 
+@media (max-height: 375px) {
+
+} */
 
 @media (max-width: 380px) {
   #about .items .about-info {
@@ -862,12 +866,26 @@
     font-size: 0.85rem;
   }
 
+  #services h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #services .items p {
+    margin: 0.8rem 0 0.9rem;
+  }
+
+  #services .items .py-1 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .progress {
     width: 255px !important;
   }
 
   .progressbar {
-    width: 242px !important;
+    width: 253px !important;
   }
 
   @keyframes progress {
@@ -929,12 +947,73 @@
   #testimonial .user-card {
     font-size: 0.5rem;
   }
+
+  #contact h1 {
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  #contact p {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #contact textarea {
+    width: 25rem;
+    height: 10rem;
+  }
+
+  #contact .label {
+    padding: 0.5rem 1rem;
+    margin: 1.75rem;
+  }
+  #contact .s1 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  #contact .s1 div {
+    margin-bottom: 0.75rem;
+  }
 }
 
 @media (max-width: 332px) {
+  /* Services */
+  #services h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #services .items p {
+    margin: 0.5rem 0 0.7rem;
+  }
+
+  #services .items .py-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+
   #testimonial i {
     margin: 1rem 0.5rem;
     font-size: 2.2rem;
+  }
+
+  #contact h1 {
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+  }
+
+  #contact p {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #contact .s1 {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  #contact textarea {
+    margin-top: 0.5rem;
   }
 
   #contact .label {

@@ -12,6 +12,21 @@
     top: 12%;
     right: 12%;
   }
+
+  #testimonial h1 {
+    padding-bottom: 2rem;
+  }
+
+  #testimonial .user-card {
+    width: 230px;
+    height: 230px;
+    margin-top: 0;
+  }
+
+  #testimonial i {
+    margin: 0.75rem 5rem;
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -37,6 +52,21 @@
 
   #testimonial .user {
     display: flex;
+  }
+
+  #testimonial h1 {
+    padding-bottom: 2rem;
+  }
+
+  #testimonial .user-card {
+    width: 230px;
+    height: 230px;
+    margin-top: 0;
+  }
+
+  #testimonial i {
+    margin: 0.75rem 3rem;
+    font-size: 5rem;
   }
 
   #contact .s1 div {
@@ -130,6 +160,11 @@
   #portfolio .flex .p6 {
     width: 250px;
     height: 200px;
+  }
+
+  #testimonial i {
+    margin: 0.75rem 2rem;
+    font-size: 5rem;
   }
 }
 
@@ -235,13 +270,19 @@
   }
 
   /* testimonial */
-  #testimonial .user {
-    display: flex;
-    justify-content: space-around;
+  #testimonial h1 {
+    padding-bottom: 2rem;
+  }
+
+  #testimonial .user-card {
+    width: 230px;
+    height: 230px;
+    margin-top: 0;
   }
 
   #testimonial i {
-    margin: 1rem 1rem;
+    margin: 1rem 2rem;
+    font-size: 3.5rem;
   }
 
   /* contact */
@@ -269,6 +310,11 @@
     #portfolio .flex .p6 {
       width: 180px;
       height: 180px;
+    }
+
+    #testimonial .user-card > P {
+      font-size: 0.8rem;
+      margin: 1rem 0;
     }
   }
 
@@ -372,18 +418,12 @@
 
     /* testimonial */
     #testimonial .user-card {
-      width: 300px;
-      height: 150px;
-      font-size: 0.55rem;
+      font-size: 0.75rem;
     }
 
     #testimonial i {
-      margin: 1rem 0.6rem;
-    }
-
-    #testimonial .first i:last-child,
-    #testimonial .second i:last-child {
-      display: none;
+      margin: 1rem 1.5rem;
+      font-size: 3.5rem;
     }
 
     /* contact */
@@ -496,6 +536,11 @@
         width: 405px;
       }
     }
+
+    #testimonial i {
+      margin: 1rem 1rem;
+      font-size: 3.5rem;
+    }
   }
 
   @media (max-width: 503px) {
@@ -565,6 +610,23 @@
   }
 }
 
+@media (max-width: 485px) {
+  #testimonial .user-card {
+    width: 210px;
+    height: 210px;
+  }
+
+  #testimonial .user-card > P {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+
+  #testimonial i {
+    margin: 1rem 1rem;
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 460px) {
   .progress {
     width: 325px;
@@ -620,6 +682,10 @@
   #portfolio .flex .p6 {
     width: 150px;
     height: 140px;
+  }
+
+  #testimonial .user-card > P {
+    font-size: 0.6rem;
   }
 }
 
@@ -678,6 +744,14 @@
     right: 15%;
     text-align: center;
   }
+
+  #testimonial i {
+    font-size: 3rem;
+  }
+
+  #testimonial .line {
+    width: 300px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -726,7 +800,12 @@
   }
 
   #testimonial .line {
-    width: 200px;
+    width: 280px;
+  }
+
+  #testimonial i {
+    margin: 1rem 0.75rem;
+    font-size: 3rem;
   }
 
   #contact textarea {
@@ -766,6 +845,11 @@
 
   #testimonial .user .user3 {
     display: none;
+  }
+
+  #testimonial i {
+    margin: 1rem 0.75rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -834,7 +918,8 @@
   }
 
   #testimonial i {
-    margin: 1rem 0.2rem;
+    margin: 1rem 0.5rem;
+    font-size: 2.5rem;
   }
 
   #testimonial .line {
@@ -846,7 +931,12 @@
   }
 }
 
-@media (max-width: 331px) {
+@media (max-width: 332px) {
+  #testimonial i {
+    margin: 1rem 0.5rem;
+    font-size: 2.2rem;
+  }
+
   #contact .label {
     padding: 0.5rem 0.1rem;
     font-size: 0.75rem;
@@ -889,6 +979,18 @@
 
   #testimonial .user-card {
     font-size: 0.4rem;
+    height: 190px;
+    width: 250px;
+    font-size: 0.5rem;
+  }
+
+  #testimonial i {
+    margin: 1rem 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  #testimonial .line {
+    width: 200px;
   }
 
   #contact .label {

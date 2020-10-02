@@ -20,7 +20,7 @@ body {
 }
 
 body.show-nav {
-  transform: translateX(150px);
+  transform: translateX(200px);
 }
 
 body.show-nav .btn-lines:nth-child(1) {
@@ -94,7 +94,7 @@ nav {
   left: 0;
   border-right: 2px solid var(--primary-color);
   z-index: 100;
-  width: 150px;
+  width: 200px;
   height: 100vh;
   background-color: var(--dark-primary-color);
   color: #fff;
@@ -146,8 +146,8 @@ nav .logo img {
 
 .menu-btn {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   background-color: #00005c;
   width: 50px;
   height: 50px;
@@ -161,6 +161,7 @@ nav .logo img {
   height: 2.5px;
   background: #fff;
   margin: 0.5rem 0;
+  transition: all 0.4s ease;
 }
 /* showcase */
 
@@ -173,30 +174,6 @@ nav .logo img {
   justify-content: center;
   text-align: center;
   position: re;
-}
-
-#showcase i {
-  padding: 0.25rem;
-  margin: 1rem 0;
-  color: #fff;
-}
-
-#showcase .animate {
-  position: absolute;
-  bottom: 0;
-  animation: animate 1s infinite;
-}
-
-@keyframes animate {
-  0% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
-  100% {
-    bottom: 0;
-  }
 }
 
 #showcase img {
@@ -618,13 +595,6 @@ nav .logo img {
   width: 70px;
   height: 100%;
   background-color: var(--tertiary-color);
-}
-
-#testimonial .red {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  visibility: hidden;
 }
 
 /* contact */

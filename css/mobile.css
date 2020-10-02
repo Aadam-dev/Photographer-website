@@ -1,15 +1,10 @@
 @media (min-width: 1367px) {
-  #about h1 {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
   #contact .s1 div {
     margin-bottom: 2.5rem;
   }
 
   #portfolio ul {
-    top: 12%;
+    top: 10%;
     right: 12%;
   }
 
@@ -89,8 +84,8 @@
   }
 
   #portfolio ul {
-    top: 12%;
-    right: 5%;
+    top: 7%;
+    right: 7%;
   }
 
   #portfolio .flex .p1,
@@ -168,7 +163,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   /* about */
   #about .items .about-info {
     padding: 0.5rem;
@@ -267,6 +262,11 @@
   #portfolio .flex .p6 {
     width: 200px;
     height: 200px;
+  }
+
+  #portfolio ul {
+    top: 10% !important;
+    right: 10% !important;
   }
 
   /* testimonial */
@@ -794,8 +794,8 @@
   }
 
   #portfolio ul {
-    top: 13%;
-    right: 12%;
+    top: 15% !important;
+    right: 10% !important;
     text-align: center;
   }
 
@@ -975,6 +975,16 @@
   #portfolio ul {
     top: 18%;
     right: 8%;
+  }
+
+  #portfolio .flex .p1,
+  #portfolio .flex .p2,
+  #portfolio .flex .p3,
+  #portfolio .flex .p4,
+  #portfolio .flex .p5,
+  #portfolio .flex .p6 {
+    width: 100px;
+    height: 100px;
   }
 
   #testimonial .user-card {

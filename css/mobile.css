@@ -405,17 +405,6 @@
       font-size: 0.75rem;
     }
 
-    #portfolio .flex .p1 i,
-    #portfolio .flex .p2 i,
-    #portfolio .flex .p3 i,
-    #portfolio .flex2 .p4 i,
-    #portfolio .flex2 .p5 i,
-    #portfolio .flex2 .p6 i {
-      padding: 0.5rem;
-      top: 35%;
-      left: 35%;
-    }
-
     /* testimonial */
     #testimonial .user-card {
       font-size: 0.75rem;

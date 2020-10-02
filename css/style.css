@@ -468,20 +468,6 @@ nav .logo img {
   left: 25px;
 }
 
-#portfolio .flex .p1 i,
-#portfolio .flex .p2 i,
-#portfolio .flex .p3 i,
-#portfolio .flex .p4 i,
-#portfolio .flex .p5 i,
-#portfolio .flex .p6 i {
-  background-color: var(--secondary-color);
-  border-radius: 50%;
-  padding: 0.75rem;
-  position: absolute;
-  top: 45%;
-  left: 45%;
-}
-
 #portfolio .flex .p4 {
   width: 380px;
   height: 270px;

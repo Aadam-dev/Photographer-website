@@ -594,7 +594,7 @@ nav .logo img {
 /* contact */
 #contact {
   background-color: var(--primary-color);
-  height: 200vh;
+  height: 100vh;
 }
 
 #contact .toggler-1,

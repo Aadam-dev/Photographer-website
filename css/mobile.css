@@ -418,7 +418,12 @@
     /* contact */
     #contact {
       height: 170vh;
+<<<<<<< HEAD
     } 
+=======
+    }
+    
+>>>>>>> 6a4f8c5b8b04544558321522f499d1c47ab774df
     #contact textarea {
       width: 25rem;
       height: 12rem;

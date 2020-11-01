@@ -416,6 +416,9 @@
     }
 
     /* contact */
+    #contact {
+      height: 170vh;
+    } 
     #contact textarea {
       width: 25rem;
       height: 12rem;
